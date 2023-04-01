@@ -5,8 +5,7 @@ using DAO.PlanningPortal.Application.Interfaces.POS;
 using DAO.PlanningPortal.Application.Interfaces.Transaction;
 using DAO.PlanningPortal.Application.Services;
 using DAO.PlanningPortal.Application.Services.Finance;
-using DAO.PlanningPortal.Application.Services.Inventory;
-using DAO.PlanningPortal.Application.Services.POS;
+using DAO.PlanningPortal.Application.Services.Inventory; 
 using DAO.PlanningPortal.Application.Services.TransactionService;
 using DAO.PlanningPortal.Utility.Caching;
 using FluentValidation;
@@ -28,7 +27,7 @@ namespace DAO.PlanningPortal.Application
             services.AddTransient<IActivityLogService, ActivityLogService>();
             services.AddTransient<IAccessRequestService, AccessRequestService>();
 
-            services.AddTransient<IItemMasterService, ItemMasterService>();
+           
 
             #region finance 
             services.AddTransient<IVenderService, VenderService>();
@@ -36,7 +35,7 @@ namespace DAO.PlanningPortal.Application
             services.AddTransient<ICustomerService, CustomerService>();
             services.AddTransient<ITransactionService, TransactionService>();
             services.AddTransient<ITransactionService, TransactionService>();
-            services.AddTransient<IPOS, POSService>();
+          
             #endregion
             #region Inventory 
             services.AddTransient<IInventoryService, Inventory>();

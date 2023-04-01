@@ -24,8 +24,7 @@ using zero.Application.Shared.Resources;
 namespace DAO.PlanningPortal.Application.Services;
 
 public class BasePlanService : IBasePlanService
-{
-    private readonly IBasePlanRepository _dataService;
+{ 
     private const string TRANSPORTTYPE_ALL_KEY = "Nop.transporttype.all";
     private const string WEEKDAYS_ALL_KEY = "Nop.weekdays.all";
     private readonly ICacheManager _cacheManager;
@@ -42,7 +41,7 @@ public class BasePlanService : IBasePlanService
 
     private readonly IActivityLogService _activityLogService;
 
-    public BasePlanService(IBasePlanRepository dataService, ILogger<BasePlanService> logger, IActivityLogService activityLogService,
+    public BasePlanService(  ILogger<BasePlanService> logger, IActivityLogService activityLogService,
         IGenericRepositoryAsync<ServiceWorker> serviceWorkersRepository,
         IGenericRepositoryAsync<Route> routesRepository, ICacheManager cacheManager,
         IGenericRepositoryAsync<TransportType> transportTypeRepository,
@@ -52,8 +51,7 @@ public class BasePlanService : IBasePlanService
         IGenericRepositoryAsync<BasePlan> basePlanRepository,
         IGenericRepositoryAsync<DraftPlan> draftPlanRepository)
     {
-        _logger = logger;
-        _dataService = dataService;
+        _logger = logger; 
         _serviceWorkersRepository = serviceWorkersRepository;
         _routesRepository = routesRepository;
         _transportTypeRepository = transportTypeRepository;
@@ -68,8 +66,7 @@ public class BasePlanService : IBasePlanService
     public async Task ImportAsync(UploadPlanDto plan)
     {
         var rawData = await ReadFileAsync(plan);
-        var (lst, count) = MapData(rawData);
-        _dataService.PostData(lst, count);
+        var (lst, count) = MapData(rawData); 
     }
 
     public Task<Result<List<BasePlanDTO>>> LoadBasePlanData(BasePlanSearchDto request)

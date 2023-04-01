@@ -10,9 +10,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
-using Microsoft.EntityFrameworkCore.Metadata;
-using POSERP.Entities;
-using POSERP.Entities.Models;
+using Microsoft.EntityFrameworkCore.Metadata; 
 using System;
 using System.Linq;
 using System.Linq.Expressions;
@@ -46,17 +44,17 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser, Applicati
 
     #region IApplicationDbContext Planning Portal
 
-    public DbSet<Route> Routes { get; set; }
-    public DbSet<WeekDays> WeekDays { get; set; }
-    public DbSet<RouteType> RouteTypes { get; set; }
-    public DbSet<TransportType> TransportTypes { get; set; }
-    public DbSet<BasePlan> BasePlans { get; set; }
-    public DbSet<ServiceWorker> ServiceWorkers { get; set; }
-    public DbSet<DailyPlan> DailyPlans { get; set; }
-    public DbSet<DraftPlan> DraftPlans { get; set; }
-    public DbSet<UserOuMapping> UserTenantMappings { get; set; }
-    public DbSet<OrdeningGroup> OrdeningGroups { get; set; }
-    public DbSet<AlternativeServiceWorkersforOrdeningGroup> AlternativeServiceWorkersforOrdeningGroups { get; set; }
+    //public DbSet<Route> Routes { get; set; }
+    //public DbSet<WeekDays> WeekDays { get; set; }
+    //public DbSet<RouteType> RouteTypes { get; set; }
+    //public DbSet<TransportType> TransportTypes { get; set; }
+    //public DbSet<BasePlan> BasePlans { get; set; }
+    //public DbSet<ServiceWorker> ServiceWorkers { get; set; }
+    //public DbSet<DailyPlan> DailyPlans { get; set; }
+    //public DbSet<DraftPlan> DraftPlans { get; set; }
+    //public DbSet<UserOuMapping> UserTenantMappings { get; set; }
+    //public DbSet<OrdeningGroup> OrdeningGroups { get; set; }
+    //public DbSet<AlternativeServiceWorkersforOrdeningGroup> AlternativeServiceWorkersforOrdeningGroups { get; set; }
 
 
     //Activity Log dbSets
@@ -70,14 +68,7 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser, Applicati
 
 
 
-
-    #region GDPR
-
-    public DbSet<DataAccessRequest> DataAccessRequest { get; set; }
-    public DbSet<ReasonToAccess> ReasonToAccess { get; set; }
-    public DbSet<Systems> Systems { get; set; }
-
-    #endregion GDPR
+ 
 
     #region finance
     public DbSet<Item> Item { get; set; }
@@ -101,68 +92,7 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser, Applicati
 
     #endregion
 
-
-
-    /* Define a DbSet for each entity of the application */
-
-
-
-    public virtual DbSet<ADM_ACC_Bank_Master> ADM_ACC_Bank_Master { get; set; }
-    public virtual DbSet<INV_MSD_Brand> INV_MSD_Brand { get; set; }
-    public virtual DbSet<INV_MSD_Color> INV_MSD_Color { get; set; }
-    public virtual DbSet<INV_MSD_Item> INV_MSD_Item { get; set; }
-    public virtual DbSet<INV_MSD_Model> INV_MSD_Model { get; set; }
-    public virtual DbSet<INV_MSD_SubItemCode> INV_MSD_SubItemCode { get; set; }
-    public virtual DbSet<SD_POS_Invoice> SD_POS_Invoice { get; set; }
-    public virtual DbSet<SD_POS_InvoiceDetail> SD_POS_InvoiceDetail { get; set; }
-    public virtual DbSet<INV_MSD_SubItemPrice> INV_MSD_SubItemPrice { get; set; }
-    public virtual DbSet<INV_MSD_Category> INV_MSD_Category { get; set; }
-
-    public virtual DbSet<INV_MSD_Department> INV_MSD_Department { get; set; }
-
-    public virtual DbSet<INV_MSD_PackingSize> INV_MSD_PackingSize { get; set; }
-    public virtual DbSet<SD_POS_Invoice_Template> SD_POS_Invoice_Template { get; set; }
-    public virtual DbSet<SD_POS_InvoiceDetail_Template> SD_POS_InvoiceDetail_Template { get; set; }
-
-//public virtual DbSet<ADM_CON_Approve_Type> ADM_CON_Approve_Type { get; set; }
-//public virtual DbSet<ADM_CON_Round_Master> ADM_CON_Round_Master { get; set; }
-//public virtual DbSet<ADM_CON_Status_Type> ADM_CON_Status_Type { get; set; }
-//public virtual DbSet<ADM_GEN_Area_Master> ADM_GEN_Area_Master { get; set; }
-//public virtual DbSet<ADM_GEN_City_Master> ADM_GEN_City_Master { get; set; }
-//public virtual DbSet<ADM_GEN_Region_Master> ADM_GEN_Region_Master { get; set; }
-//public virtual DbSet<ADM_GEN_State_Master> ADM_GEN_State_Master { get; set; }
-//public virtual DbSet<ADM_INV_Bin_Master> ADM_INV_Bin_Master { get; set; }
-//public virtual DbSet<ADM_INV_Item> ADM_INV_Item { get; set; }
-//public virtual DbSet<ADM_INV_Shelf_Master> ADM_INV_Shelf_Master { get; set; }
-//public virtual DbSet<ADM_INV_Unit_Master> ADM_INV_Unit_Master { get; set; }
-//public virtual DbSet<ADM_INV_Warehouse_Master> ADM_INV_Warehouse_Master { get; set; }
-//public virtual DbSet<ADM_ORG_Branch_Master> ADM_ORG_Branch_Master { get; set; }
-//public virtual DbSet<ADM_ORG_Company_Master> ADM_ORG_Company_Master { get; set; }
-//public virtual DbSet<ADM_ORG_Division_Master> ADM_ORG_Division_Master { get; set; }
-//public virtual DbSet<ADM_ORG_Group_Master> ADM_ORG_Group_Master { get; set; }
-//public virtual DbSet<ADM_SAM_Salesman_Master> ADM_SAM_Salesman_Master { get; set; }
-//public virtual DbSet<AUD_EXO_Audit_Trial> AUD_EXO_Audit_Trial { get; set; }
-//public virtual DbSet<dtproperty> dtproperties { get; set; }
-//public virtual DbSet<InvoiceType> InvoiceTypes { get; set; }
-//public virtual DbSet<LOG_User_Master> LOG_User_Master { get; set; }
-//public virtual DbSet<LOG_User_Type> LOG_User_Type { get; set; }
-//public virtual DbSet<SD_SAL_Quotation> SD_SAL_Quotation { get; set; }
-//public virtual DbSet<SD_SAL_QuotationDeatil> SD_SAL_QuotationDeatil { get; set; }
-//public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
-//public virtual DbSet<ADM_ACC_COA_Master> ADM_ACC_COA_Master { get; set; }
-//public virtual DbSet<ADM_CON_Default_Type> ADM_CON_Default_Type { get; set; }
-//public virtual DbSet<ADM_CON_Due_Terms> ADM_CON_Due_Terms { get; set; }
-//public virtual DbSet<Employee> Employees { get; set; }
-//public virtual DbSet<FIN_Account_Master> FIN_Account_Master { get; set; }
-//public virtual DbSet<INV_MSD_Item_Backup> INV_MSD_Item_Backup { get; set; }
-//public virtual DbSet<INV_MSD_ItemType> INV_MSD_ItemType { get; set; }
-//public virtual DbSet<INV_MSD_StockMethod> INV_MSD_StockMethod { get; set; }
-//public virtual DbSet<INV_MSD_SubItemCode_Backup> INV_MSD_SubItemCode_Backup { get; set; }
-//public virtual DbSet<INV_MSD_SubItemCode1> INV_MSD_SubItemCode1 { get; set; }
-//public virtual DbSet<INV_MSD_SubItemPrice_backup> INV_MSD_SubItemPrice_backup { get; set; }
-//public virtual DbSet<INV_MSD_SubItemPrice1> INV_MSD_SubItemPrice1 { get; set; }
-//public virtual DbSet<INV_MSD_Unit> INV_MSD_Unit { get; set; }
-
+     
 
 
 public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)

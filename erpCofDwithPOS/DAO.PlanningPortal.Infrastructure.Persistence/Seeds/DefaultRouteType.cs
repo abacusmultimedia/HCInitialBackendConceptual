@@ -12,7 +12,7 @@ namespace DAO.PlanningPortal.Infrastructure.Persistence.Seeds
         public static async Task SeedAsync(ApplicationDbContext context)
         {
             //Seed Default RouteTypes
-            var routeTypeEntities = await context.RouteTypes.ToListAsync();
+             
 
             var languages = new List<RouteType>
             {
@@ -21,11 +21,10 @@ namespace DAO.PlanningPortal.Infrastructure.Persistence.Seeds
                 new RouteType { Title = "Tilkørselsrute", IsDeleted = false, CreatedOn = DateTime.Now}
             };
 
-            var result = languages.Where(p => routeTypeEntities.All(p2 => p2.Title != p.Title)).ToList();
+         
+             
 
-            if (!result.Any()) return;
-
-            await context.RouteTypes.AddRangeAsync(result);
+             
             context.SaveChanges();
         }
     }

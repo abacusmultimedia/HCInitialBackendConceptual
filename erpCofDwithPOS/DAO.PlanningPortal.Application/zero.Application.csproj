@@ -21,6 +21,7 @@
   <ItemGroup>
     <Folder Include="Interfaces\Financial Reports\" />
     <Folder Include="Interfaces\CostCeners\" />
+    <Folder Include="Services\POS\" />
   </ItemGroup>
 
 </Project>

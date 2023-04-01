@@ -67,8 +67,7 @@ public static class DependencyInjection
         services.AddTransient<IContextTransaction, DbContextTransaction>();
         services.AddTransient<ITokenProvider, TokenProvider>();
         services.AddTransient<IIdentityService, IdentityService>();
-        services.AddTransient<IActivityLogService, ActivityLogService>();
-        services.AddTransient<IBasePlanRepository ,BasePlanRepository> ();
+        services.AddTransient<IActivityLogService, ActivityLogService>(); 
 
         AddJwtAuthentication(services, configuration);
 

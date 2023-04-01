@@ -36,7 +36,7 @@ public class Startup
             action.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
         });
 
-        services.AddSwaggerUI("ERP Backend API");
+        services.AddSwaggerUI("HC Stystems");
 
         services.AddInfrastructure(Configuration);
         services.AddApplication();
@@ -52,7 +52,7 @@ public class Startup
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", " ERP Backend API v1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", " HC Stystems v1");
             });
         }
 

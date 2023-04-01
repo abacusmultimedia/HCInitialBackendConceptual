@@ -19,7 +19,7 @@ namespace DAO.PlanningPortal.Infrastructure.Persistence.Seeds
             else
             {
                 //Seed Default RouteTypes
-                var routeTypeEntities = await context.RouteTypes.ToListAsync();
+                
                 var ledgerGroups = new List<LedgerGroup>
             {
                 new LedgerGroup {  Title="Assets", IsDeleted = false  , ChildLedgerGroups= new List<LedgerGroup>{
@@ -89,12 +89,10 @@ namespace DAO.PlanningPortal.Infrastructure.Persistence.Seeds
                 } },
 
             };
-                var result = ledgerGroups.Where(p => routeTypeEntities.All(p2 => p2.Title != p.Title)).ToList();
-                if (!result.Any()) return;
+                 
                 try
                 {
-                    await context.LedgerGroup.AddRangeAsync(result);
-                    context.SaveChanges();
+                    
 
                 }
                 catch (Exception ex) { }
