@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="DAO.PlanningPortal.Domain.Constants.AuthPolicyName">
+    <Position X="19.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgIAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Constants\AuthPolicyName.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAO.PlanningPortal.Domain.Constants.IdentityRoleName">
+    <Position X="13.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgACQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Constants\IdentityRoleName.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAO.PlanningPortal.Domain.Entities.ActivityLog" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAEIAAAAAIAIEAAAAAQAAAAAAAAAABAAQABAAA=</HashCode>
+      <FileName>Entities\ActivityLog.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DAO.PlanningPortal.Domain.Entities.ActivityLogDetail" BaseTypeListCollapsed="true">
+    <Position X="13.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACABAAAAAAAEAAAAAAAAAAAAAAAAAAAAAgAAgAAAA=</HashCode>
+      <FileName>Entities\ActivityLogDetail.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DAO.PlanningPortal.Domain.Entities.ActivityLogType" BaseTypeListCollapsed="true">
+    <Position X="18.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAEAEAAAIAAAAAAAAQAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Entities\ActivityLogType.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DAO.PlanningPortal.Domain.Entities.ActivityType" BaseTypeListCollapsed="true">
+    <Position X="21" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\ActivityType.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DAO.PlanningPortal.Domain.Entities.ApplicationRole">
+    <Position X="24.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\ApplicationRole.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAO.PlanningPortal.Domain.Entities.ApplicationUser" BaseTypeListCollapsed="true">
+    <Position X="8" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAQAAAAIAAEAAAAAAAAAAKAAACAAAgAQAGAAE=</HashCode>
+      <FileName>Entities\ApplicationUser.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DAO.PlanningPortal.Domain.Entities.ApplicationUserRole">
+    <Position X="15.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\ApplicationUserRole.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DAO.PlanningPortal.Domain.Entities.BasePlan" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIASAAQARAIAQAAAAkAAAAQAAAACAAAAAAAAERAgAAE=</HashCode>
+      <FileName>Entities\BasePlan.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DAO.PlanningPortal.Domain.Entities.Configuration" BaseTypeListCollapsed="true">
+    <Position X="22.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAQAQAAgAAQAEAAAAAgAAAACAAAAAAAgAQAGAAE=</HashCode>
+      <FileName>Entities\Configuration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DAO.PlanningPortal.Domain.Entities.DailyPlan" BaseTypeListCollapsed="true">
+    <Position X="1" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AIACAAQAQAIAQAAAAEAAAAQAAAACAAABAAAAERAgAAE=</HashCode>
+      <FileName>Entities\DailyPlan.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DAO.PlanningPortal.Domain.Entities.DraftPlans" BaseTypeListCollapsed="true">
+    <Position X="5.5" Y="5.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ACACAAEIAgAAAAAAAgAAAAAAAAACAAIgAAAggQAEAAE=</HashCode>
+      <FileName>Entities\DraftPlans.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DAO.PlanningPortal.Domain.Entities.AlternativeServiceWorkersforOrdeningGroup" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="9.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AIACAAAAAAAAQAABAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\FlayerforOrdening.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DAO.PlanningPortal.Domain.Entities.Language" BaseTypeListCollapsed="true">
+    <Position X="15.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAACAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Language.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DAO.PlanningPortal.Domain.Entities.Ordening" BaseTypeListCollapsed="true">
+    <Position X="13.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIACBAAAAAAAQAABAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Ordening.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DAO.PlanningPortal.Domain.Entities.OrdeningGroup" BaseTypeListCollapsed="true">
+    <Position X="3.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAABAAAEAAA=</HashCode>
+      <FileName>Entities\OrdeningGroup.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DAO.PlanningPortal.Domain.Entities.OrganizationUnit" BaseTypeListCollapsed="true">
+    <Position X="0.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACECQAQABAAAAAEAAAAAQAAAACAAAAAgAgAQAEAAE=</HashCode>
+      <FileName>Entities\OrganizationUnit.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DAO.PlanningPortal.Domain.Entities.Route" BaseTypeListCollapsed="true">
+    <Position X="3.25" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAASQASAQAAAACAAAAAAgEAAAAQCAIAAABAgCQAGAAE=</HashCode>
+      <FileName>Entities\Route.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DAO.PlanningPortal.Domain.Entities.RouteType" BaseTypeListCollapsed="true">
+    <Position X="17.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAEAAAEAAAAAAAAACAAAAAAAAAQAAAAE=</HashCode>
+      <FileName>Entities\RouteType.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DAO.PlanningPortal.Domain.Entities.ServiceWorker" BaseTypeListCollapsed="true">
+    <Position X="5.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEQAQAAAAAAAAEAAAAAAAAICAAAAAAAAAQAAAAk=</HashCode>
+      <FileName>Entities\ServiceWorker.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DAO.PlanningPortal.Domain.Entities.Tenant" BaseTypeListCollapsed="true">
+    <Position X="15.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACECQAQABAAAAAEAAAAAQAAAACAAAAAAAgAQAAAAE=</HashCode>
+      <FileName>Entities\Tenant.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Right" Position="2.233" Collapsed="true" />
+  </Class>
+  <Class Name="DAO.PlanningPortal.Domain.Entities.Translation" BaseTypeListCollapsed="true">
+    <Position X="20.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAACAAAAAQAAAAAAAAAAgAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Entities\Translation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DAO.PlanningPortal.Domain.Entities.Transport" BaseTypeListCollapsed="true">
+    <Position X="24.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAQAQAAgAEAAAEAAgAAAAAACAAAAAQAAAQAAAAE=</HashCode>
+      <FileName>Entities\Transport.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DAO.PlanningPortal.Domain.Entities.TransportType" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAQAQAAgAEAAAAAAAAQAAAACAAAAAAAAAQAAAAE=</HashCode>
+      <FileName>Entities\TrasportType.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.394" Collapsed="true" />
+  </Class>
+  <Class Name="DAO.PlanningPortal.Domain.Entities.UserOuMapping" BaseTypeListCollapsed="true">
+    <Position X="10" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAgAAAGAAE=</HashCode>
+      <FileName>Entities\UserOuMapping.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DAO.PlanningPortal.Domain.Entities.WeekDays" BaseTypeListCollapsed="true">
+    <Position X="24.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAQAQAAAAEAAAAAAAAAAAAACAAAAAAAACQAAAAE=</HashCode>
+      <FileName>Entities\WeekDays.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
